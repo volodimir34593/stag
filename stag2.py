@@ -29,7 +29,7 @@ class TechnicalIndicator:
                 avg_loss = loss.rolling(window=window).mean()
                 rs = avg_gain / avg_loss
                 data['RSI'] = 100 - (100 / (1 + rs))
-            # Add more indicators as needed
+       
 
         return data
 
@@ -52,8 +52,8 @@ class TechnicalIndicator:
         fig.update_layout(title='Графік ціни та технічного індикатора',
                           xaxis_title='Дата',
                           yaxis_title='Ціна',
-                          plot_bgcolor='black',  # Set background color
-                          paper_bgcolor='black')  # Set paper background color
+                          plot_bgcolor='black',  
+                          paper_bgcolor='black')  
         fig.show()
 
 # Задаємо параметри та виконуємо код
