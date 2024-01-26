@@ -65,3 +65,4 @@ indicator = TechnicalIndicator(symbol, start_date, end_date)
 price_data = indicator.get_price_data()
 indicator_data = indicator.calculate_indicator(price_data)
 indicator.plot_data(indicator_data)
+
